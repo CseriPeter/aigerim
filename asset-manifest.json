@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/aigerim/static/css/main.c73aa6ea.css",
-    "main.js": "/aigerim/static/js/main.77d85b0c.js",
+    "main.js": "/aigerim/static/js/main.f132d80a.js",
     "static/js/787.b9233709.chunk.js": "/aigerim/static/js/787.b9233709.chunk.js",
     "index.html": "/aigerim/index.html",
     "main.c73aa6ea.css.map": "/aigerim/static/css/main.c73aa6ea.css.map",
-    "main.77d85b0c.js.map": "/aigerim/static/js/main.77d85b0c.js.map",
+    "main.f132d80a.js.map": "/aigerim/static/js/main.f132d80a.js.map",
     "787.b9233709.chunk.js.map": "/aigerim/static/js/787.b9233709.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c73aa6ea.css",
-    "static/js/main.77d85b0c.js"
+    "static/js/main.f132d80a.js"
   ]
 }
