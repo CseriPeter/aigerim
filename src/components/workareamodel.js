@@ -4,9 +4,10 @@ import { useGLTF } from "@react-three/drei";
 import dtr from "../config/degreeconverter"
 import { motion } from "framer-motion-3d"
 import { backgroundAnim } from "../config/animation"
+import { mouseAnim, bookAnim, coffeeAnim } from "../config/animation"
 
 export function WorkAreaModel(props) {
-    const { nodes, materials } = useGLTF("/assets/models/joinedGLFT.gltf");
+    const { nodes, materials } = useGLTF(process.env.PUBLIC_URL + "/assets/models/joinedGLFT.gltf");
 
     return (
 
@@ -29,11 +30,13 @@ export function WorkAreaModel(props) {
                 geometry={nodes.desk_2_2.geometry}
                 material={materials.Mat}
             />
-            <mesh
+            <motion.mesh
                 castShadow
                 receiveShadow
                 geometry={nodes.desk_2_3.geometry}
                 material={materials.ComputerMouse_mat1}
+                animate={props.loc == "/courseandbonus" ? mouseAnim : {}}
+                transition={{ duration: 0.6, delay: 0.2 }}
             />
             <mesh
                 castShadow
@@ -77,65 +80,77 @@ export function WorkAreaModel(props) {
                 geometry={nodes.desk_2_10.geometry}
                 material={materials.F44336}
             />
-            <mesh
+            <motion.mesh
                 castShadow
                 receiveShadow
                 geometry={nodes.desk_2_11.geometry}
                 material={materials.lambert3SG}
+                animate={props.loc == "/aboutme" ? coffeeAnim : {}}
+                transition={{duration: 0.7}}
             />
-            <mesh
+            <motion.mesh
                 castShadow
                 receiveShadow
                 geometry={nodes.desk_2_12.geometry}
                 material={materials.lambert2SG}
+                animate={props.loc == "/aboutme" ? coffeeAnim : {}}
+                transition={{duration: 0.7}}
             />
-            <mesh
+            <motion.mesh
                 castShadow
                 receiveShadow
                 geometry={nodes.desk_2_13.geometry}
                 material={materials.mat17}
+                animate={props.loc == "/onlineconsultation" ? bookAnim : {}}
             />
-            <mesh
+            <motion.mesh
                 castShadow
                 receiveShadow
                 geometry={nodes.desk_2_14.geometry}
                 material={materials["mat21.001"]}
+                animate={props.loc == "/onlineconsultation" ? bookAnim : {}}
             />
-            <mesh
+            <motion.mesh
                 castShadow
                 receiveShadow
                 geometry={nodes.desk_2_15.geometry}
                 material={materials.mat8}
+                animate={props.loc == "/onlineconsultation" ? bookAnim : {}}
             />
-            <mesh
+            <motion.mesh
                 castShadow
                 receiveShadow
                 geometry={nodes.desk_2_16.geometry}
                 material={materials.mat23}
+                animate={props.loc == "/onlineconsultation" ? bookAnim : {}}
             />
-            <mesh
+            <motion.mesh
                 castShadow
                 receiveShadow
                 geometry={nodes.desk_2_17.geometry}
                 material={materials.mat12}
+                animate={props.loc == "/onlineconsultation" ? bookAnim : {}}
             />
-            <mesh
+            <motion.mesh
                 castShadow
                 receiveShadow
                 geometry={nodes.desk_2_18.geometry}
                 material={materials.mat3}
+                animate={props.loc == "/onlineconsultation" ? bookAnim : {}}
             />
-            <mesh
+            <motion.mesh
                 castShadow
                 receiveShadow
                 geometry={nodes.desk_2_19.geometry}
                 material={materials.mat20}
+                animate={props.loc == "/onlineconsultation" ? bookAnim : {}}
             />
-            <mesh
+            <motion.mesh
                 castShadow
                 receiveShadow
                 geometry={nodes.desk_2_20.geometry}
                 material={materials["mat9.001"]}
+                animate={props.loc == "/onlineconsultation" ? bookAnim : {}}
             />
             <mesh
                 castShadow

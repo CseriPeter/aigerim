@@ -56,7 +56,7 @@ function Course() {
                             </svg>
                             <CardContent align="left" sx={{ pt: 3 }}>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Insert Course title
+                                    Scrum Master Fundamentals
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     This course will give you a quick solid base of what is Agile and Scrum as well as what Scrum Master role is about.

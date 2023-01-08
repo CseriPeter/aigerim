@@ -34,3 +34,22 @@ export let backgroundAnim = {
         rotateY: [null, dtr(165), dtr(165), dtr(145), dtr(145)],
     },
 }
+
+export let mouseAnim = {
+    rotateY: [null,0.3,-0.1,0.05],
+    x: [null,0.03,0.01,-0.02],
+}
+
+const bookScale = [null, 1, 1.5, 1, 1]
+export let bookAnim = {
+    scaleX: bookScale,
+    scaleY: bookScale,
+    scaleZ: bookScale,
+    rotateX: [null,-0.3, -0.3,-0.3, 0],
+}
+
+export let coffeeAnim = {
+    z: [null,0.1,0],
+    y: [null,0.1,0],
+    rotateX: [null,-0.4,0]
+}

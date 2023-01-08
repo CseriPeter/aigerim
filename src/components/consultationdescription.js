@@ -22,7 +22,7 @@ function ConsultationDesc() {
                         <Card sx={{ maxWidth: 750 }}>
                             <CardMedia
                                 sx={{ height: 500 }}
-                                image="/pictures/avatarWave.png"
+                                image={process.env.PUBLIC_URL + "/pictures/avatarWave.png"}
                                 title="green iguana"
                             />
                             <CardContent>

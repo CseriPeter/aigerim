@@ -1,0 +1,22 @@
+.canvas{
+    position: fixed !important;
+    top: 0 !important;
+}
+
+@media screen and (min-width: 900px) {
+    .canvas {
+        height: 1000px !important;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .canvas {
+        height: 950px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .canvas {
+        height: 600px !important;
+    }
+}

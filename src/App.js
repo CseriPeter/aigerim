@@ -9,27 +9,37 @@ import OnlineConsultation from './pages/consultation';
 import Background from './components/background';
 import { AnimatePresence } from "framer-motion";
 import Footer from './components/footer';
+import { ThemeProvider } from '@mui/system';
+import { createTheme } from '@mui/material/styles';
 
 function App() {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo({behavior: 'smooth', top: 0})
+    window.scrollTo({ behavior: 'smooth', top: 0 })
   }, [location])
+
+  const theme = createTheme({
+    typography: {
+      fontFamily: '"Helvetica Neue"'
+    },
+  });
 
   return (
     <>
-      <Background />
-      <ResponsiveAppBar />
-      <AnimatePresence exitBeforeEnter>
-        <Routes key={location.pathname} location={location}>
-          <Route path="/" element={<Home />} />
-          <Route path="/aboutme" element={<AboutMe />} />
-          <Route path="/onlineconsultation" element={<OnlineConsultation />} />
-          <Route path="/courseandbonus" element={<CourseAndBonus />} />
-        </Routes>
-      </AnimatePresence>
-      <Footer />
+      <Background loc={location.pathname} />
+      <ThemeProvider theme={theme}>
+        <ResponsiveAppBar />
+        <AnimatePresence exitBeforeEnter>
+          <Routes key={location.pathname} location={location}>
+            <Route path="/" element={<Home />} />
+            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/onlineconsultation" element={<OnlineConsultation />} />
+            <Route path="/courseandbonus" element={<CourseAndBonus />} />
+          </Routes>
+        </AnimatePresence>
+        <Footer />
+      </ThemeProvider>
       {/* <R3fDemo /> */}
     </>
   );

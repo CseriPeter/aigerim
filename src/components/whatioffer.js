@@ -22,7 +22,7 @@ function WhatIoffer() {
                                 <CardActionArea>
                                     <CardMedia
                                         sx={{ height: 400 }}
-                                        image="/pictures/avatarLearn.png"
+                                        image={process.env.PUBLIC_URL + "/pictures/avatarLearn.png"}
                                         title="green iguana"
                                     />
                                     <CardContent>
@@ -45,7 +45,7 @@ function WhatIoffer() {
                                 <CardActionArea>
                                     <CardMedia
                                         sx={{ height: 400 }}
-                                        image="/pictures/avatarWave.png"
+                                        image={process.env.PUBLIC_URL + "/pictures/avatarWave.png"}
                                         title="green iguana"
                                     />
                                     <CardContent>

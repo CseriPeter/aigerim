@@ -26,7 +26,7 @@ function Bonus() {
                             component="img"
                             alt="green iguana"
                             height="340"
-                            image="/pictures/bonus.png"
+                            image={process.env.PUBLIC_URL + "/pictures/bonus.png"}
                         />
                         <CardContent align="left" sx={{ pt: 3 }}>
                             <Typography gutterBottom variant="h5" component="div">
@@ -39,7 +39,7 @@ function Bonus() {
                         <Box sx={{ '& > :not(style)': { m: 1 }, pb: 3 }}>
                             <Fab variant="extended" color="primary" aria-label="add">
                                 <DownloadIcon sx={{ mr: 1 }} />
-                                <a style={{ color: "inherit", textDecoration: "inherit" }} href="/assets/PDF/Checklist for Scrum meetings Bonus from Aigerim.pdf" download>
+                                <a style={{ color: "inherit", textDecoration: "inherit" }} href={process.env.PUBLIC_URL + "/assets/PDF/Checklist for Scrum meetings Bonus from Aigerim.pdf"} download>
                                     Click To Download
                                 </a>
                                 <DownloadIcon sx={{ ml: 1 }} />
