@@ -1,0 +1,11 @@
+.work .MuiAvatar-root{
+    background-color: #03a9f4;
+}
+
+.education .MuiAvatar-root{
+    background-color: #558b2f;
+}
+
+.certification .MuiAvatar-root{
+    background-color: #ffab00
+}

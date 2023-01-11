@@ -2,9 +2,6 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
-import Divider from '@mui/material/Divider';
-import Chip from '@mui/material/Chip';
-import Container from '@mui/material/Container';
 import { motion } from "framer-motion";
 import { leftAnim, rightAnim } from "../config/animation"
 import DivideSections from './dividesections';

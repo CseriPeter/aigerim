@@ -1,5 +1,12 @@
 import dtr from "./degreeconverter"
 
+
+export let upAnim = {
+    initial: { opacity: 0, y: +200 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: +200 }
+}
+
 export let leftAnim = {
     initial: { opacity: 0, x: -200 },
     animate: { opacity: 1, x: 0 },
@@ -10,12 +17,6 @@ export let rightAnim = {
     initial: { opacity: 0, x: +200 },
     animate: { opacity: 1, x: 0 },
     exit: { opacity: 0, x: +200 }
-}
-
-export let upAnim = {
-    initial: { opacity: 0, y: +200 },
-    animate: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: +200 }
 }
 
 export let divideAnim = {

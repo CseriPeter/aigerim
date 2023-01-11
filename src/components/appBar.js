@@ -58,7 +58,7 @@ function ResponsiveAppBar() {
                 textDecoration: 'none',
               }}
             >
-              A.W.A
+              [Agile With Aigerim]
             </Typography>
           </Link>
 
@@ -119,7 +119,7 @@ function ResponsiveAppBar() {
                 textDecoration: 'none',
               }}
             >
-              A.W.A
+              [A.W.A]
             </Typography>
           </Link>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
