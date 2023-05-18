@@ -16,7 +16,7 @@ function ConsultationDesc() {
     return (
         <>
             <DivideSections label="CONSULTATION" />
-            <Grid justifyContent="center" container spacing={8} sx={{ p: 3, pb: 50 }}>
+            <Grid justifyContent="center" container spacing={8} sx={{ p: 3, pb: 25 }}>
                 <Grid item align="center" lg={10}>
                     <motion.div style={{ height: "100%" }} variants={upAnim} initial="initial" animate="animate" exit="exit">
                         <Card sx={{ maxWidth: 750 }}>
@@ -30,8 +30,8 @@ function ConsultationDesc() {
                                     Request Consultation From Me
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    I would like to help you with any question you might have about Agile, Scrum or maybe with your corporate career in
-                                    general. Please fill out the form below to schedule 1:1 online session with me.
+                                    I would like to help you with any question you might have about Agile, Scrum or maybe with your corporate career in general. I know from my own experience that sometimes you need a person who could bring a fresh new view to some topics you have in mind. I wish I had a mentor to help me set up a right direction in my early career. That would help me to grow faster and realize certain things earlier.
+                                    Please fill out the form below to schedule 1:1 online session with me.
                                 </Typography>
                             </CardContent>
                             <KeyboardDoubleArrowDownIcon sx={{ fontSize: 40, pb: 3 }} />

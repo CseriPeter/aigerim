@@ -15,20 +15,20 @@ function DivideSections(props) {
                         initial="initial"
                         animate="animate"
                         exit="exit"
-                        whileHover={{
-                            backgroundColor: ['hsla(255, 255, 255, 0)', 'hsla(255, 255, 255, 1)'],
-                        }}
-                        style={{ borderRadius: "16px" }}
+                        // whileHover={{
+                        //     backgroundColor: ['hsla(255, 255, 255, 0.90)', 'hsla(255, 255, 255, 1)'],
+                        // }}
+                        style={{ borderRadius: "16px", backgroundColor: "rgba(255, 255, 255, 1)" }}
                     >
                         <Chip label={props.label} />
                     </motion.div>
                 </Divider>
                 {props.description && <motion.p
                     whileHover={{
-                        backgroundColor: ['hsla(255, 255, 255, 0)', 'hsla(255, 255, 255, 1)'],
+                        backgroundColor: ['hsla(255, 255, 255, 0.65)', 'hsla(255, 255, 255, 1)'],
                     }}
                     animate={{ opacity: 1 }}
-                    style={{ textAlign: "center", borderRadius: "15px" }}
+                    style={{ textAlign: "center", borderRadius: "15px", padding: "20px", backgroundColor: "rgba(255, 255, 255, 0.65)"}}
                 >
                     {props.description}
                 </motion.p>}

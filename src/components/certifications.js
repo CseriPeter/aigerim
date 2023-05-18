@@ -3,14 +3,16 @@ import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import { motion } from "framer-motion";
-import { leftAnim, rightAnim } from "../config/animation"
+import { leftAnim, rightAnim, upAnim } from "../config/animation"
 import DivideSections from './dividesections';
+import Carousel from './carousel'
 
 function Certifications() {
+
     return (
         <>
             <DivideSections label="CERTIFICATIONS" />
-            <Grid container justifyContent="center" spacing={8} sx={{ p: 3, pb: 50 }}>
+            {/* <Grid container justifyContent="center" spacing={8} sx={{ p: 3, pb: 25 }}>
                 <Grid item align="right" md={4}>
                     <motion.div style={{ height: "100%" }} variants={leftAnim} initial="initial" animate="animate" exit="exit">
                         <Card elevation={16} align="center" sx={{ height: "100%", maxWidth: 500 }} >
@@ -35,6 +37,13 @@ function Certifications() {
                                 title="green iguana"
                             />
                         </Card>
+                    </motion.div>
+                </Grid>
+            </Grid> */}
+            <Grid container justifyContent="center" sx={{ p: 3, pb: 25 }}>
+                <Grid item sx={12}>
+                    <motion.div style={{ height: "100%" }} variants={upAnim} initial="initial" animate="animate" exit="exit">
+                        <Carousel />
                     </motion.div>
                 </Grid>
             </Grid>

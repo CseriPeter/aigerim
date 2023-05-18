@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
 import NavigationIcon from '@mui/icons-material/Navigation';
 import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
@@ -43,8 +44,8 @@ function Course() {
 
     return (
         <>
-            <DivideSections label="COURSE" />
-            <Grid justifyContent="center" container sx={{ p: 3, pb: 50 }}>
+            <DivideSections label="COURSES" />
+            <Grid justifyContent="center" container sx={{ p: 3, pb: 25 }}>
                 <Grid align="center" item lg={10}>
                     <motion.div style={{ height: "100%" }} variants={upAnim} initial="initial" animate="animate" exit="exit">
                         <Card elevation={16} sx={{ maxWidth: 750 }}>
@@ -56,7 +57,7 @@ function Course() {
                             </svg>
                             <CardContent align="left" sx={{ pt: 3 }}>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Scrum Master Fundamentals
+                                    Scrum Master Fundamentals 📺
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     This course will give you a quick solid base of what is Agile and Scrum as well as what Scrum Master role is about.
@@ -74,6 +75,40 @@ function Course() {
                                     <Fab variant="extended" color="primary" aria-label="add">
                                         <NavigationIcon sx={{ mr: 1 }} />
                                         Go To My Udemy Course
+                                        <NavigationIcon sx={{ ml: 1 }} />
+                                    </Fab>
+                                </a>
+                            </Box>
+                        </Card>
+                    </motion.div>
+                </Grid>
+                <Grid align="center" item lg={10} sx={{ pt: 30 }}>
+                    <motion.div style={{ height: "100%" }} variants={upAnim} initial="initial" animate="animate" exit="exit">
+                        <Card elevation={16} sx={{ maxWidth: 750 }}>
+                            {/* <CardMedia
+                                sx={{ height: 500 }}
+                                image={process.env.PUBLIC_URL + "/pictures/gumroad.png"}
+                                title="green iguana"
+                            /> */}
+                            <img style={{paddingTop: "20px"}} src={process.env.PUBLIC_URL + "/pictures/gumroad.png"}/>
+                            <CardContent align="left" sx={{ pt: 3 }}>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Basics Of Scrum 📕
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    Do you still wonder what Scrum or Agile are all about? This guide will give you a quick solid base that everyone needs to know.
+                                </Typography>
+                            </CardContent>
+
+                            {/* <motion.p  style={{ translateX: cursorXSpring, translateY: cursorYSpring }}>
+                            dfdfdfed
+                        </motion.p> */}
+                            {/*onMouseEnter={() => { setShowMessage(true); }} onMouseLeave={() => { setShowMessage(false); }}*/}
+                            <Box sx={{ '& > :not(style)': { m: 1 }, pb: 3 }}>
+                                <a style={{ textDecoration: "inherit" }} href="https://www.udemy.com/course/scrum-master-fundamentals/?referralCode=DDB0DDB95B4BC77FF5D7">
+                                    <Fab variant="extended" color="primary" aria-label="add">
+                                        <NavigationIcon sx={{ mr: 1 }} />
+                                        Go To My Gumroad Course
                                         <NavigationIcon sx={{ ml: 1 }} />
                                     </Fab>
                                 </a>

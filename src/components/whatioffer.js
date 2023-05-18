@@ -14,23 +14,23 @@ function WhatIoffer() {
     return (
         <>
             <DivideSections label="WHAT I OFFER" />
-            <Grid justifyContent="center" container spacing={8} sx={{ p: 3, pb: 50 }}>
+            <Grid justifyContent="center" container spacing={8} sx={{ p: 3, pb: 25 }}>
                 <Grid align="right" item md={4}>
                     <motion.div variants={leftAnim} initial="initial" animate="animate" exit="exit">
                         <Link to="/courseandbonus" style={{ color: "inherit", textDecoration: "inherit" }}>
                             <Card elevation={16} align="center" sx={{ maxWidth: 500, height: "100%" }}>
                                 <CardActionArea>
                                     <CardMedia
-                                        sx={{ height: 400 }}
+                                        sx={{ height: 500 }}
                                         image={process.env.PUBLIC_URL + "/pictures/avatarLearn.png"}
                                         title="green iguana"
                                     />
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="div">
-                                            Udemy Course + Bonus
+                                            Courses + Bonus
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
-                                            Check out my Udemy Course here, if you haven"t already. If you came for the bonus please click on this card!
+                                            Check out my Udemy and Gumroad course here, if you haven't already. If you came for the bonus please click on this card!
                                         </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -44,7 +44,7 @@ function WhatIoffer() {
                             <Card elevation={16} align="center" sx={{ maxWidth: 500, height: "100%" }}>
                                 <CardActionArea>
                                     <CardMedia
-                                        sx={{ height: 400 }}
+                                        sx={{ height: 500 }}
                                         image={process.env.PUBLIC_URL + "/pictures/avatarWave.png"}
                                         title="green iguana"
                                     />

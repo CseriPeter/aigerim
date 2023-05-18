@@ -16,7 +16,7 @@ import DivideSections from './dividesections';
 import "../style/journey.css"
 
 function Journey() {
-    const desc = "I am Certified Scrum Master with experience in IT infrastructure support, SharePoint Server Administration and Project Track lead. I have a passion for Agile Transformation, its implementation and assisting teams to deliver outmost productivity and value to corporations."
+    const desc = "My name is Aigerim and I am from Kazakhstan. I am Certified Scrum Master, however before I transitioned to this role 3 years ago I experienced multiple technical roles both in Kazakhstan and Hungary in IT engineering field. I believe my Master degree in Computer Science Engineering as well as my technical career path brought me to this Agile world that changed me, my mindset and quickly after became my passion. I am driven by an impact Agile transformation and its implementation brings to the teams when applied correctly.  I find motivation in building healthy, organized, well performing and self-motivated teams."
 
     return (
         <>
@@ -111,6 +111,15 @@ function Journey() {
                                             </Avatar>
                                         </ListItemAvatar>
                                         <ListItemText primary="Certified SAFe 5 Agilist" secondary="Scaled Agile Framework (SAFe)" />
+                                    </ListItem>
+                                    <Divider variant="middle" />
+                                    <ListItem>
+                                        <ListItemAvatar>
+                                            <Avatar>
+                                                <WorkspacePremiumIcon />
+                                            </Avatar>
+                                        </ListItemAvatar>
+                                        <ListItemText primary="Certified SAFe 6 Advanced Scrum Master" secondary="Scaled Agile Framework (SAFe)" />
                                     </ListItem>
                                 </div>
                             </List>

@@ -17,7 +17,7 @@ function ContactMe() {
 
     return (
         <>
-            <DivideSections label="CONTACT ME" />
+            <DivideSections label="CONTACT ME"/>
             <Grid justifyContent="center" container sx={{ p: 3 }}>
                 <Grid align="center" item lg={10}>
                     <motion.div variants={upAnim} initial="initial" animate="animate" exit="exit">

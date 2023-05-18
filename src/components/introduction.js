@@ -14,7 +14,7 @@ function Introduction() {
     return (
         <>
             <DivideSections label="INTRODUCTION" />
-            <Grid justifyContent="center" container spacing={8} sx={{ p: 3, pb: 50 }}>
+            <Grid justifyContent="center" container spacing={8} sx={{ p: 3, pb: 25 }}>
                 <Grid item align="right" md={4}>
                     <motion.div style={{ height: "100%" }} variants={leftAnim} initial="initial" animate="animate" exit="exit">
                         <Card elevation={16} align="center" sx={{ display: 'flex', alignItems: 'center', maxWidth: 500, height: "100%" }} >

@@ -14,7 +14,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 
-const pages = ['About Me', 'Online Consultation', 'Course + Bonus'];
+const pages = ['About Me', 'Online Consultation', 'Courses + Bonus'];
 const links = ['aboutme', 'onlineconsultation', 'courseandbonus'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
