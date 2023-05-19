@@ -105,7 +105,7 @@ function Course() {
                         </motion.p> */}
                             {/*onMouseEnter={() => { setShowMessage(true); }} onMouseLeave={() => { setShowMessage(false); }}*/}
                             <Box sx={{ '& > :not(style)': { m: 1 }, pb: 3 }}>
-                                <a style={{ textDecoration: "inherit" }} href="https://www.udemy.com/course/scrum-master-fundamentals/?referralCode=DDB0DDB95B4BC77FF5D7">
+                                <a style={{ textDecoration: "inherit" }} href="https://agilewithaigerim.gumroad.com/l/BasicsOfScrum?layout=profile">
                                     <Fab variant="extended" color="primary" aria-label="add">
                                         <NavigationIcon sx={{ mr: 1 }} />
                                         Go To My Gumroad Course
