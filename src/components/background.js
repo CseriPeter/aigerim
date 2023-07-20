@@ -13,7 +13,7 @@ function Background(props) {
             <Canvas className="canvas" dpr={[1, 2]} camera={{ fov: 45, position: [0, 0, 8] }} >
                 <directionalLight intensity={0.2} args={[0xf2b407, 1]} position={[0, 0, 1]} />
                 {/* <Stage intensity={0.3} shadows={false} environment={"city"}> */}
-                <Environment preset="sunset" />
+                <Environment files={process.env.PUBLIC_URL + "/assets/enviroment/venice_sunset_1k.hdr"} />
                 <Center>
                     <WorkAreaModel loc={props.loc} scale={5} />
                 </Center>
